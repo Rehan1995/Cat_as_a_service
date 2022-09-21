@@ -2,7 +2,7 @@ import fetch from "node-fetch";
 import blend from "@mapbox/blend";
 import { writeFilePromise } from "./file-handler.js";
 import { constructURL } from "./url-handler.js";
-import { ENCODING, IMAGE_FORMAT, IMAGE_HEIGHT, IMAGE_WIDTH, OUTPUT_FILE_PATH, URL_TEMPLATES } from "../constants.js";
+import { ENCODING, IMAGE_FORMAT, IMAGE_HEIGHT, IMAGE_WIDTH, OUTPUT_FILE_PATH } from "../constants.js";
 import { logger } from "../logger.js";
 
 /**

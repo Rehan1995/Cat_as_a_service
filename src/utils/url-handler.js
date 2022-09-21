@@ -9,7 +9,7 @@ const argv = minimist(process.argv.slice(2));
  * @param urlTemplate 
  * @returns image file path
  */
-export const constructURL = (urlTemplate) => {
+export let constructURL = (urlTemplate) => {
   return pupa(urlTemplate, {
     greeting: argv.greeting ?? "Hello",
     who: argv.who ?? "You",

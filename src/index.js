@@ -5,13 +5,13 @@ import { blendImages, retrieveImage, writeImageFile } from "./utils/image-handle
  * Bootstrap the process
  */
 (async () => {
-    const imageParts = URL_TEMPLATES.map(async (urlTemplate) => {
+    let imageParts = URL_TEMPLATES.map(async (urlTemplate) => {
         return await retrieveImage(urlTemplate);
     });
       
     logger.info("Image parts have been constructed");
     
-    const blendedImage = await blendImages(imageParts);
+    let blendedImage = await blendImages(imageParts);
     logger.info("Image blending has been completed");
 
     await writeImageFile(blendedImage);
