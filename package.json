@@ -1,0 +1,26 @@
+{
+  "name": "tech-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rehan Samarasekara",
+  "license": "ISC",
+  "dependencies": {
+    "@mapbox/blend": "^2.0.1",
+    "minimist": "^1.2.6",
+    "node-fetch": "^3.2.10",
+    "nodemon": "^2.0.20",
+    "pupa": "^3.1.0",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.19.1",
+    "@babel/preset-env": "^7.19.1"
+  }
+}
