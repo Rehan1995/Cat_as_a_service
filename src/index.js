@@ -1,4 +1,5 @@
 import { URL_TEMPLATES } from "./constants.js";
+import { logger } from "./logger.js";
 import { blendImages, retrieveImage, writeImageFile } from "./utils/image-handler.js";
 
 /**
